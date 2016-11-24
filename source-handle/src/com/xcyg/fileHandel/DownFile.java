@@ -18,7 +18,7 @@ import org.apache.tomcat.util.codec.binary.StringUtils;
 
 /**
  *
- * @author xcyg
+ * @author cuixubin
  */
 public class DownFile extends HttpServlet {
 

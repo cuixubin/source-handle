@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author xcyg
+ * @author cuixubin
  */
 public class UpFile extends HttpServlet {
 
