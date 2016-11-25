@@ -36,7 +36,7 @@ public class DownFile extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         String filePath = request.getParameter("path");
         if(null == filePath || filePath.equals("")) {
-            response.getWriter().print("璇锋眰鏂囦欢涓嶅瓨鍦ㄣ��");
+            response.getWriter().print("file not found");
             return;
         }
         String fileName = filePath.substring(filePath.lastIndexOf("/") + 1);
@@ -65,7 +65,7 @@ public class DownFile extends HttpServlet {
                 filein.close();
             }
         }else {
-            response.getWriter().print("涓嬭浇澶辫触锛佹枃浠跺凡鎹熷潖鎴栬�呭凡琚垹闄ゃ��");
+            response.getWriter().print("Download failed.The file is corrupt or has been deleted.");
         }
     }
 
